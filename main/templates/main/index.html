@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="content_list">
+{% for post in posts %}
+    {% if post.brand == 'Nike' %}
+        <div class="content" onclick="location.href='https://www.nike.com/kr/launch/?type=upcoming&activeDate=date-filter:AFTER'">
+            <img src="{{ post.image }}" alt="" height="600" class="image">
+            <h1 class="brand">{{ post.brand }}</h1>
+            <p class="title">{{ post.title }}</p>
+            <p class="date">{{ post.date }}</p>
+        </div>
+    {% elif post.brand == 'Converse' %}
+        <div class="content" onclick="location.href='https://www.converse.co.kr/category/launch-calendar?pageSize=200&type=upcoming&activeDate=date-filter:AFTER'">
+            <img src="{{ post.image }}" alt="" height="600" class="image">
+            <h1 class="brand">{{ post.brand }}</h1>
+            <p class="title">{{ post.title }}</p>
+            <p class="date">{{ post.date }}</p>
+        </div>
+    {% endif %}
+{% endfor %}
+</div>
+
+{% endblock %}

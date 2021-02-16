@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% block title %}회원가입{% endblock %}
+{% block content %}
+    <div class="signup">
+        <h2>회원가입</h2>
+        <form action="{% url 'User:signup' %}" method="post" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-group">
+                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                    {{ field }}
+                </div>
+            {% if field.errors %}
+                <span style="color:red">{{ field.errors }}</span>
+            {% endif %}
+            {% endfor %}
+            <input class="btn btn-primary" type="submit" value="회원가입">
+        </form>
+    </div>
+{% endblock %}
