@@ -1,0 +1,128 @@
+body{
+    background-color: #2d2d2d;
+}
+#mainNav {
+        height: 40px;
+
+}
+#mainNav ul li {
+        list-style: none;
+        width: 32%;
+        color: white;
+        background-color: #2d2d2d;
+        float: left;
+        line-height: 300%;
+        vertical-align: middle;
+        text-align: center;
+        height: 40px;
+}
+#mainNav .nav-link {
+        text-decoration:none;
+        color: white;
+        display: block;
+        font-size: 140%;
+        font-weight: bold;
+}
+#mainNav .nav-link:hover {
+        color: red;
+        background-color: #4d4d4d;
+}
+#mainNav .nav-text{
+    font-weight: bold;
+    font-size: 24px;
+}
+#subNav {
+        height: 20px;
+
+}
+#subNav ul li {
+        list-style: none;
+        width: 16%;
+        color: white;
+        background-color: #2d2d2d;
+        float: left;
+        line-height: 300%;
+        vertical-align: middle;
+        text-align: center;
+        height: 40px;
+}
+#subNav .nav-link {
+        text-decoration:none;
+        color: white;
+        display: block;
+        font-size: 120%;
+        font-weight: bold;
+}
+#subNav .nav-link:hover {
+        color: red;
+        background-color: #4d4d4d;
+}
+
+
+.footer{
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.content_list{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin: 5% auto;
+    text-shadow:
+        -1px 0 white,
+        0 1px white,
+        1px 0 white,
+        0 -1px white;
+}
+.content_list>div{
+    max-width: 25%;
+    position: relative;
+    height: 275px;
+    overflow: hidden;
+    margin-top: 4%;
+}
+.content_list>div:hover {
+        color: red;
+        cursor: pointer;
+}
+.brand{
+    position: absolute;
+    top: -10%;
+}
+.title{
+    position: absolute;
+    top: 7%;
+}
+.price{
+    position: absolute;
+}
+.image{
+    max-width: 85%;
+    height: auto;
+}
+.date{
+    position: absolute;
+    top: 15%;
+}
+.categori{
+    margin: 10% 5%;
+    color: white;
+    height: 100%;
+    font-size: large;
+}
+.form-group{
+
+    margin-bottom: 2%;
+}
+.form-group > label{
+    margin-right: 2%;
+}
+body > div.categori > form > input.btn.btn-primary {
+    margin-top: 2%;
+}
