@@ -1,0 +1,143 @@
+body {
+    background-color: #2d2d2d;
+}
+
+#mainNav {
+    height: 40px;
+    margin-left: -7%;
+}
+
+#mainNav ul li {
+    list-style: none;
+    width: 14.5%;
+    color: white;
+    background-color: #2d2d2d;
+    float: left;
+    line-height: 300%;
+    vertical-align: middle;
+    text-align: center;
+    height: 40px;
+}
+
+#mainNav .nav-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+#mainNav .nav-link:hover {
+    color: red;
+}
+
+#mainNav .nav-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#subNav {
+    height: 20px;
+    margin-left: -7%;
+}
+
+#subNav ul li {
+    list-style: none;
+    width: 10%;
+    color: white;
+    background-color: #2d2d2d;
+    float: left;
+    line-height: 300%;
+    vertical-align: middle;
+    text-align: center;
+    height: 40px;
+}
+
+#subNav .nav-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#subNav .nav-link:hover {
+    color: red;
+}
+
+
+.footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.content_list {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align-last: center;
+    margin: 5% auto;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.content_list div {
+    max-width: 33.6%;
+    position: relative;
+    height: 253px;
+    overflow: hidden;
+    margin: 4%;
+}
+
+.content_list div:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.brand {
+    position: absolute;
+    top: -10%;
+}
+
+.title {
+    position: absolute;
+    top: 7%;
+}
+
+.price {
+    position: absolute;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.date {
+    position: absolute;
+    top: 15%;
+}
+
+.categori {
+    margin: 10% 5%;
+    color: white;
+    height: 100%;
+    font-size: large;
+}
+
+.form-group {
+
+    margin-bottom: 2%;
+}
+
+.form-group > label {
+    margin-right: 2%;
+}
+
+body > div.categori > form > input.btn.btn-primary {
+    margin-top: 2%;
+}
