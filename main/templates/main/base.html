@@ -3,8 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link media="only screen and (max-device-width: 800px)" rel="stylesheet" href="{% static 'css/pad_base.css' %}">
+    <link media="only screen and (max-device-width: 600px)" rel="stylesheet" href="{% static 'css/mobile_base.css' %}">
 
 </head>
 <body>
